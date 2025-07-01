@@ -8,6 +8,10 @@ const Todo = mongoose.model('Todo', {
         type: String,
         trim: true,
         required: true
+    },
+    done : {
+        type: Boolean,
+        default: false
     }
 });
 
