@@ -65,6 +65,7 @@ export default class App extends React.Component {
           <div className="row">
             <div className="col-xs-12 col-sm-8 col-md-8 offset-md-2">
               <h1>Todos App</h1>
+              <h3>Using react, mongo, express</h3>
               <div className="todo-app">
                 <AddTodo handleAddTodo={this.handleAddTodo} />
                 <TodoList 
