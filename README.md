@@ -33,7 +33,7 @@ Befor you do any further step, make sure that your code can run sucessfully on d
  *Make sure to correct Json format.
 - Step 2: Navigate to root level of this repository and run:
 `docker-compose up -d`
-- Step 3: Open browser `localhowst:3000` to test the app.
+- Step 3: Open browser `localhost:3000` to test the app.
 - Step 4: Now your app is ready to deploy to any environment like Minikube, EKS or Kubernetes.
 - Step 5: Remove line 30 in `package.json` to avoid proxy error when deploy to K8s, EKS.
 - Step 6: [Optional] Remove DockerCompose resources by running `docker-compose down --volumes`
@@ -50,19 +50,23 @@ NAME       STATUS   ROLES           AGE     VERSION
 minikube   Ready    control-plane   5m48s   v1.27.4
 ```
 - Step 2: Configure your shell to use Minikube's Docker daemon. Reason: you need to build Docker image in the way that Minikube can access those Images.
-`eval $(minikube docker-env)`
+Gitbash: `eval $(minikube docker-env)`
+Windows Powershell: `minikube docker-env --shell powershell | Invoke-Expression`  
 Verify you're using Minikube's Docker
 `docker images | grep minikube`  
+
+NOTE: If below error occured, upgrade your minikube version and Docker Desktop to latest:   
+`API version 1.43 is not supported by this client: the minimum supported API version is 1.44`  
 
 - Step 3: Build docker image for Backend and Frontend.
 `docker build -t todo-app-backend:v0.0.1 ./backend`  
 `docker build -t todo-app-frontend:v0.0.1 ./frontend`  
 Check docker images:
 `docker images | grep todo-app`
-- Step 3: Apply Kubenetes config by running below command:  
+- Step 4: Apply Kubenetes config by running below command:  
 `kubectl apply -f minikube-local.yaml`
 
-- Step 4: Check running pods:
+- Step 5: Check running pods:
 `kubectl get pods`
 Expected result:  
 ```
@@ -75,7 +79,7 @@ frontend-deployment-5fb7bf874f-tbrkv   1/1     Running   0          7m41s
 mongo-deployment-56b959dd89-26bcz      1/1     Running   0          26m
 ```
 
-- Step 5: Check running Services:
+- Step 6: Check running Services:
 `kubectl get services`  
 Expected result:  
 ```
@@ -94,7 +98,7 @@ Enable addon if not enabled:
 Open seperate Terminal and type:
 `minikube tunnel`
 Keep terminal running then access address, example:  
-http://localhost  
+`http://localhost`  
 Try to add, mark Done and Delete some TODO item.
 
 
