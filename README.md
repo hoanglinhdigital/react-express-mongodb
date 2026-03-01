@@ -32,11 +32,11 @@ Befor you do any further step, make sure that your code can run sucessfully on d
  ```"proxy": "http://backend:3000"```  
  *Make sure to correct Json format.
 - Step 2: Navigate to root level of this repository and run:
-`docker-compose up -d`
+`docker compose up -d`
 - Step 3: Open browser `localhost:3000` to test the app.
 - Step 4: Now your app is ready to deploy to any environment like Minikube, EKS or Kubernetes.
-- Step 5: Remove line 30 in `package.json` to avoid proxy error when deploy to K8s, EKS.
-- Step 6: [Optional] Remove DockerCompose resources by running `docker-compose down --volumes`
+- Step 5: Remove line 31 in `frontend/package.json` to avoid proxy error when deploy to K8s, EKS.
+- Step 6: [Optional] Remove DockerCompose resources by running `docker compose down --volumes`
 
 ## Deploy to minikube on local
 - Step 1: Start minikube
