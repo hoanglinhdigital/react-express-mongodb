@@ -1,0 +1,418 @@
+  console.log
+    === PUT /todos/:todoId - START ===
+
+      at log (routes/index.js:43:13)
+
+  console.log
+    Request received at: 2026-03-21T11:28:37.233Z
+
+      at log (routes/index.js:44:13)
+
+  console.log
+    Request params: { todoId: '69be80e550a125ee9a84c783' }
+
+      at log (routes/index.js:45:13)
+
+  console.log
+    Request body: {}
+
+      at log (routes/index.js:46:13)
+
+  console.log
+    Request headers: {
+      host: '127.0.0.1:61752',
+      'accept-encoding': 'gzip, deflate',
+      'content-type': 'application/json',
+      'content-length': '2',
+      connection: 'close'
+    }
+
+      at log (routes/index.js:47:13)
+
+  console.log
+    Extracted todoId: 69be80e550a125ee9a84c783
+
+      at log (routes/index.js:50:13)
+
+  console.log
+    TodoId type: string
+
+      at log (routes/index.js:51:13)
+
+  console.log
+    TodoId length: 24
+
+      at log (routes/index.js:52:13)
+
+  console.log
+    TodoId validation: PASSED
+
+      at log (routes/index.js:60:13)
+
+  console.log
+    Attempting to find and update todo...
+
+      at log (routes/index.js:62:13)
+
+  console.log
+    Database operation completed
+
+      at log (routes/index.js:69:17)
+
+  console.log
+    Updated todo result: { _id: '69be80e550a125ee9a84c783', text: 'Update Task', done: true }
+
+      at log (routes/index.js:70:17)
+
+  console.log
+    SUCCESS: Todo updated successfully
+
+      at log (routes/index.js:77:17)
+
+  console.log
+    === PUT /todos/:todoId - END (SUCCESS) ===
+
+      at log (routes/index.js:78:17)
+
+  console.log
+    About to call serverResponses.sendSuccess
+
+      at log (routes/index.js:81:17)
+
+  console.log
+    serverResponses object: object
+
+      at log (routes/index.js:82:17)
+
+  console.log
+    sendSuccess function: function
+
+      at log (routes/index.js:83:17)
+
+  console.log
+    === PUT /todos/:todoId - START ===
+
+      at log (routes/index.js:43:13)
+
+  console.log
+    Request received at: 2026-03-21T11:28:37.248Z
+
+      at log (routes/index.js:44:13)
+
+  console.log
+    Request params: { todoId: 'invalid-id' }
+
+      at log (routes/index.js:45:13)
+
+  console.log
+    Request body: {}
+
+      at log (routes/index.js:46:13)
+
+  console.log
+    Request headers: {
+      host: '127.0.0.1:61754',
+      'accept-encoding': 'gzip, deflate',
+      connection: 'close',
+      'content-length': '0'
+    }
+
+      at log (routes/index.js:47:13)
+
+  console.log
+    Extracted todoId: invalid-id
+
+      at log (routes/index.js:50:13)
+
+  console.log
+    TodoId type: string
+
+      at log (routes/index.js:51:13)
+
+  console.log
+    TodoId length: 10
+
+      at log (routes/index.js:52:13)
+
+  console.log
+    ERROR: Invalid todoId format
+
+      at log (routes/index.js:57:15)
+
+  console.log
+    === PUT /todos/:todoId - START ===
+
+      at log (routes/index.js:43:13)
+
+  console.log
+    Request received at: 2026-03-21T11:28:37.264Z
+
+      at log (routes/index.js:44:13)
+
+  console.log
+    Request params: { todoId: '69be80e550a125ee9a84c784' }
+
+      at log (routes/index.js:45:13)
+
+  console.log
+    Request body: {}
+
+      at log (routes/index.js:46:13)
+
+  console.log
+    Request headers: {
+      host: '127.0.0.1:61756',
+      'accept-encoding': 'gzip, deflate',
+      connection: 'close',
+      'content-length': '0'
+    }
+
+      at log (routes/index.js:47:13)
+
+  console.log
+    Extracted todoId: 69be80e550a125ee9a84c784
+
+      at log (routes/index.js:50:13)
+
+  console.log
+    TodoId type: string
+
+      at log (routes/index.js:51:13)
+
+  console.log
+    TodoId length: 24
+
+      at log (routes/index.js:52:13)
+
+  console.log
+    TodoId validation: PASSED
+
+      at log (routes/index.js:60:13)
+
+  console.log
+    Attempting to find and update todo...
+
+      at log (routes/index.js:62:13)
+
+  console.log
+    Database operation completed
+
+      at log (routes/index.js:69:17)
+
+  console.log
+    Updated todo result: null
+
+      at log (routes/index.js:70:17)
+
+  console.log
+    ERROR: Todo not found in database
+
+      at log (routes/index.js:73:19)
+
+  console.log
+    === DELETE /todos/:todoId - START ===
+
+      at log (routes/index.js:111:13)
+
+  console.log
+    Request received at: 2026-03-21T11:28:37.276Z
+
+      at log (routes/index.js:112:13)
+
+  console.log
+    Request params: { todoId: '69be80e550a125ee9a84c785' }
+
+      at log (routes/index.js:113:13)
+
+  console.log
+    Request body: {}
+
+      at log (routes/index.js:114:13)
+
+  console.log
+    Request headers: {
+      host: '127.0.0.1:61758',
+      'accept-encoding': 'gzip, deflate',
+      connection: 'close'
+    }
+
+      at log (routes/index.js:115:13)
+
+  console.log
+    Extracted todoId: 69be80e550a125ee9a84c785
+
+      at log (routes/index.js:118:13)
+
+  console.log
+    TodoId type: string
+
+      at log (routes/index.js:119:13)
+
+  console.log
+    TodoId length: 24
+
+      at log (routes/index.js:120:13)
+
+  console.log
+    TodoId validation: PASSED
+
+      at log (routes/index.js:128:13)
+
+  console.log
+    Attempting to find and delete todo...
+
+      at log (routes/index.js:130:13)
+
+  console.log
+    Database operation completed
+
+      at log (routes/index.js:133:17)
+
+  console.log
+    Deleted todo result: { _id: '69be80e550a125ee9a84c785', text: 'Delete Task', done: false }
+
+      at log (routes/index.js:134:17)
+
+  console.log
+    SUCCESS: Todo deleted successfully
+
+      at log (routes/index.js:141:17)
+
+  console.log
+    === DELETE /todos/:todoId - END (SUCCESS) ===
+
+      at log (routes/index.js:142:17)
+
+  console.log
+    About to call serverResponses.sendSuccess
+
+      at log (routes/index.js:145:17)
+
+  console.log
+    serverResponses object: object
+
+      at log (routes/index.js:146:17)
+
+  console.log
+    sendSuccess function: function
+
+      at log (routes/index.js:147:17)
+
+  console.log
+    === DELETE /todos/:todoId - START ===
+
+      at log (routes/index.js:111:13)
+
+  console.log
+    Request received at: 2026-03-21T11:28:37.291Z
+
+      at log (routes/index.js:112:13)
+
+  console.log
+    Request params: { todoId: 'invalid-id' }
+
+      at log (routes/index.js:113:13)
+
+  console.log
+    Request body: {}
+
+      at log (routes/index.js:114:13)
+
+  console.log
+    Request headers: {
+      host: '127.0.0.1:61760',
+      'accept-encoding': 'gzip, deflate',
+      connection: 'close'
+    }
+
+      at log (routes/index.js:115:13)
+
+  console.log
+    Extracted todoId: invalid-id
+
+      at log (routes/index.js:118:13)
+
+  console.log
+    TodoId type: string
+
+      at log (routes/index.js:119:13)
+
+  console.log
+    TodoId length: 10
+
+      at log (routes/index.js:120:13)
+
+  console.log
+    ERROR: Invalid todoId format
+
+      at log (routes/index.js:125:15)
+
+  console.log
+    === DELETE /todos/:todoId - START ===
+
+      at log (routes/index.js:111:13)
+
+  console.log
+    Request received at: 2026-03-21T11:28:37.305Z
+
+      at log (routes/index.js:112:13)
+
+  console.log
+    Request params: { todoId: '69be80e550a125ee9a84c786' }
+
+      at log (routes/index.js:113:13)
+
+  console.log
+    Request body: {}
+
+      at log (routes/index.js:114:13)
+
+  console.log
+    Request headers: {
+      host: '127.0.0.1:61762',
+      'accept-encoding': 'gzip, deflate',
+      connection: 'close'
+    }
+
+      at log (routes/index.js:115:13)
+
+  console.log
+    Extracted todoId: 69be80e550a125ee9a84c786
+
+      at log (routes/index.js:118:13)
+
+  console.log
+    TodoId type: string
+
+      at log (routes/index.js:119:13)
+
+  console.log
+    TodoId length: 24
+
+      at log (routes/index.js:120:13)
+
+  console.log
+    TodoId validation: PASSED
+
+      at log (routes/index.js:128:13)
+
+  console.log
+    Attempting to find and delete todo...
+
+      at log (routes/index.js:130:13)
+
+  console.log
+    Database operation completed
+
+      at log (routes/index.js:133:17)
+
+  console.log
+    Deleted todo result: null
+
+      at log (routes/index.js:134:17)
+
+  console.log
+    ERROR: Todo not found in database
+
+      at log (routes/index.js:137:19)
+

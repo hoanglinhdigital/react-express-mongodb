@@ -135,7 +135,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: 430950558682.dkr.ecr.ap-southeast-1.amazonaws.com/todo-fronend:latest
+        image: 430950558682.dkr.ecr.ap-southeast-1.amazonaws.com/todo-frontend:latest
         resources:
           requests:
             memory: "256Mi"
